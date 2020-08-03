@@ -1,0 +1,162 @@
+* {
+    font-family: Bitter;
+    background-color: #CF4D29;
+    color: #90361d;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    color: #FD0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+h2 {
+    color: #E7A694;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 5px;
+}
+
+input {
+    width: 65%;
+    padding: 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 7px;
+
+    transition: all 0.2s ease-out;
+}
+
+input[type="submit"] {
+    width: 25%;
+    background-color: #931;
+    border: none;
+    color: #FFF;
+    margin: 0 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    background-color: #EA9;
+}
+
+.header {
+    max-width: 350px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.header a {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    padding-top: 1.5em;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 75px;
+}
+
+.logo hr {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+}
+
+.subtitle {
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #E7A694;
+    line-height: 2em;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.main hr {
+    border: 0;
+    border-top: 4px dashed rgba(0, 0, 0, 0.3);
+}
+
+.game-box img {
+    max-height: 250px;
+    margin: 30px 0 0 30px;
+    padding: 0;
+    box-shadow: 5px 5px 20px #621;
+    display: inline-block;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.game-box a img:hover {
+    box-shadow: 0 0 50px yellow;
+    transform: scale(1.05);
+}
+
+.newsletter-box {
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.social-container {
+    text-align: center;
+}
+
+.social {
+    padding: 3px;
+}
+
+.social a {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        transition: all 0.3s ease-out;
+}
+
+.social a:hover {
+    background-color: #EA9;
+    transform: scale(1.15);
+
+}
+
+.social img {
+        height: 80px;
+        width: 80px;
+        background-color: #931;
+        border-radius: 12px;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 4em;
+    color: #520;
+    margin-top: -1em;
+}
