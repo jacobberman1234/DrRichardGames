@@ -1,0 +1,32 @@
+* {
+    font-family: 'Do Hyeon', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EF463D;
+}
+
+.container {
+    width: 30%;
+    margin: auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2em;
+    color: #8F2A25;
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    height: 200px;
+}
+
+.video {
+    text-align: center;
+}

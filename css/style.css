@@ -36,21 +36,26 @@ input {
     box-sizing: border-box;
     border: 2px solid #fff;
     border-radius: 7px;
+    color: black;
 
     transition: all 0.2s ease-out;
 }
 
-input[type="submit"] {
+.submit {
     width: 25%;
     background-color: #931;
+    padding: 10px;
     border: none;
     color: #FFF;
-    margin: 0 8px;
+    margin: 0 15px;
     cursor: pointer;
     text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
 }
 
-input[type="submit"]:hover {
+.submit:hover {
     transform: scale(1.1);
     background-color: #EA9;
 }
@@ -66,6 +71,11 @@ input[type="submit"]:hover {
 .header a {
     font-size: 20px;
     letter-spacing: 2px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
 }
 
 .logo {
