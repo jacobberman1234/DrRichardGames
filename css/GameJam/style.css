@@ -1,0 +1,297 @@
+:root{
+    --dark-background-color: #686E96;
+    --dark-text-color: #151726;
+    --light-text-color: #FFFEFC;
+    --light-background-color: #CACDE3;
+    --light-weight: 400;
+    --medium-weight: 600;
+    --bold-weight: 1000;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background: var(--light-background-color);
+    color: var(--dark-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    min-width: 1560px;
+    height: 45vh;
+    padding: 1vh;
+    background: var(--dark-background-color);
+    background-position: fixed;
+    text-align: center;
+    justify-content: center;
+    /* background: url('images/GameJam/background.jpg') no-repeat center center/cover */
+}
+
+.showcase-content {
+    height: 100%;
+    width: 100%;
+    padding: 4vh 0;
+    padding-bottom: 2em;
+
+}
+
+.showcase-content img {
+    height: 50%;
+    width: auto;
+    left: 50%;
+    top: 10%;
+}
+
+.showcase-content p {
+    margin-top: 2em;
+    font-weight: var(--medium-weight);
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.main-content-video {
+    text-align: center;
+}
+
+.main-content-text {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+/* .main-content-video{
+    width: 50%;
+    right: 0;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.main-content-text {
+    font-weight: var(--medium-weight);
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 25%;
+    width: 100%;
+}
+
+.main-content-text bold{
+    font-weight: var(--bold-weight);
+}
+
+.main-content-text green{
+    color: rgb(68, 156, 68);
+}
+
+.main-content-text red{
+    color: rgb(199, 53, 53);
+}
+
+.main-content-btn {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-80%, 0);
+    padding-bottom: 3em;
+} */
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--light-background-color);
+    color: var(--dark-text-color);
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.45);
+    border-radius: 2px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-l {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.6rem;
+    text-transform: uppercase;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+}
+
+.btn-dark {
+    background: var(--dark-background-color);
+    color: var(--light-text-color);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: solid var(--dark-background-color);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: var(--light-background-color);
+    width: 900px;
+    max-width: 80%;
+    font-weight: var(--medium-weight);
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.modal-title {
+    font-weight: var(--bold-weight);
+    font-size: 1.75em;
+}
+
+.close-modal {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 2em;
+}
+
+.modal-form {
+    position: relative;
+    padding: 10px 15px;
+    font-size: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.left-top-form {
+    display: inline-block;
+    left: 3%;
+    width: 45%;
+    height: 50%;
+    font-size:1.5em;
+}
+
+.left-top-form input[type=text] {
+    right: 0;
+    width: 100%;
+    height: 50%;
+    padding-left: .25em;
+    font-size:1em;
+    margin: .25em 0;
+    padding-top: .25em;
+}
+
+.right-top-form {
+    display: inline-block;
+    right: 3%;
+    width: 45%;
+    height: 50%;
+    font-size:1.5em;
+}
+
+.right-top-form input[type=text] {
+    right: 0;
+    width: 100%;
+    height: 50%;
+    font-size:1em;
+    padding-left: .25em;
+    padding-top: .25em;
+    margin: .25em 0;
+}
+
+.bottom-left-form {
+    display: inline-block;
+    left: 3%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    font-size:1.5em;
+}
+
+.bottom-left-form input[type=email] {
+    width: 91%;
+    height: 50%;
+    font-size:1em;
+    padding-left: .25em;
+    padding-top: .25em;
+    margin: .25em 0;
+}
+
+.modal-form button {
+    margin-top: .5em;
+}
+
+@media (max-width: 1024px){
+    .showcase {
+        width: 100vw;
+        min-width: 1024px;
+        height: 45vh;
+        padding: 1vh;
+        background: var(--dark-background-color);
+        background-position: fixed;
+        /* background: url('images/GameJam/background.jpg') no-repeat center center/cover */
+    }
+}

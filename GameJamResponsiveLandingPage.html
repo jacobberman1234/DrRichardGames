@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/GameJam/newstyle.css">
+    <script src="https://kit.fontawesome.com/0a2e614e59.js" crossorigin="anonymous"></script>
+    <script defer src="js/GameJam/script.js"></script>
+    <title>Inexperienced Developer's Monthly Game Jam - Registration</title>
+</head>
+<body>
+    <header>
+        <div class="grid dark-header">
+            <div class="content">
+                <div class="logo-row">
+                    <img src="images/GameJam/logo_1280.png" alt="logo" class="logo">
+                </div>
+                <div class="title-row">
+                    <h2 class="title">One game a month. Different genres. Twelve months.</h2>
+                    <button data-modal-target="#modal" class="btn title-btn">
+                        Sign Up <i class="fas fa-chevron-right btn-icon"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="grid grid-video">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/K8BigvW7sZU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="benefits-section">
+            <div class="benefit">
+                <i class="fas fa-laptop-code"></i>
+                Become a Better Game Dev
+            </div>
+            <div class="benefit">
+                <i class="fas fa-gamepad"></i>
+                Show Off Your Games
+            </div>
+            <div class="benefit">
+                <i class="fas fa-dollar-sign"></i>
+                Win Cash Prizes
+            </div>
+        </div>
+    </section>
+    <section class="grid grid-benefit-detail">
+        <div class="benefit-detail">
+            <div class="benefit-detail-title">
+                Become a Better Game Dev
+            </div>
+            <div class="benefit-detail-text">
+                Finishing games and projects started is a necessity to begin to master game development.
+                In the spirit of this, I’ve decided for this upcoming year to create <bold>one game a month</bold> all in different genres.
+            </div>
+        </div>
+        <div class="benefit-detail">
+            <div class="benefit-detail-title">
+                Show Off Your Games
+            </div>
+            <div class="benefit-detail-text">
+                If you participate in this game jam, you're guaranteed to have your game either played or mentioned on my YouTube channel.
+                I love to brag about my friends, what can I say?
+            </div>
+        </div>
+        <div class="benefit-detail">
+            <div class="benefit-detail-title">
+                Win Cash Prizes
+            </div>
+            <div class="benefit-detail-text">
+                In order to increase the motivation of the participants, I will be rewarding a cash prize to those who compete in the paid tier.
+            </div>
+        </div>
+    </section>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                Please enter your information:
+            </div>
+            <button data-close-modal class="close-modal">&times;</button>
+        </div>
+        <div class="modal-form">
+            <form action="submit" method="GET">
+                <div>
+                    <div class="left-top-form">
+                        <label for="fName">First Name </label>
+                        <br>
+                        <input id="fName" name="fName" type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="right-top-form">
+                        <label for="lName">Last Name</label>
+                        <br>
+                        <input id="lName" name="lName" type="text" placeholder="Enter your last name">
+                    </div>
+                    <div class="bottom-left-form">
+                        <label for="email">Email</label>
+                        <br>
+                        <input id="email" name="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <button class="btn btn-dark btn-rounded" type="submit">Submit <i class="fas fa-chevron-right btn-icon"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

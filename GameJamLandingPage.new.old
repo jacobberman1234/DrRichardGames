@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/GameJam/style.css">
+    <title>Inexperiencd Developer's Monthly Game Jam - Registration</title>
+    <script src="https://kit.fontawesome.com/0a2e614e59.js" crossorigin="anonymous"></script>
+    <script defer src="js/GameJam/script.js"></script>
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-content">
+            <img src="images/GameJam/logo.png" alt="Inexperienced Developer's Monthly Game Jam">
+            <p>
+                One game a month. Different genres. 12 months.
+            </p>
+            <a data-modal-target="#modal" class="btn btn-l btn-rounded">
+                Sign Up  <i class="fas fa-chevron-right btn-icon"></i>
+            </a>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="main-content-video">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/P7t13SGytRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="main-content-text">
+            <p>
+                Finishing games and projects started is a necessity to begin to master game development.
+                In the spirit of this, I’ve decided for this upcoming year to create <bold>one game a month</bold> all in different genres.
+            </p>
+            <br>
+            <p>
+                It’s definitely going to be a challenge, but I invite you to participate with me.
+                I am new to hosting things like this, but I feel like participation will not only create more competent game devs, but also build a strong sense of community among us.
+            </p>
+            <br>
+            <p>
+                The purpose of these game jams is not to have polished games, but at least have complete game mechanics developed, if it’s polished too, well good on you!
+            </p>
+            <br>
+            <p>
+                In order to increase participation, I’ve created two tiers:
+            </p>
+            <br>
+            <ul>
+                <li><red><bold>Free</bold></red></li>
+                <li><green><bold>Paid</bold></green></li>
+            </ul>
+            <br>
+            <p>
+                Both have their pros, but for the paid tier there’s a prize pool of <bold>$100</bold> (hey, it’s something)
+            </p>
+            <br>
+            <p>Also winners and honorable mentions will have their games played on my YouTube channel</p>
+            <br>
+            <p>
+                You don't have to commit to either one yet, but the paid entry fee is $5 <bold>ON SUBMISSION</bold>
+            </p>
+            <br>
+            <p>
+                Click the button to let me know you're interested in competing!
+            </p>
+            <br>
+            <p>
+                The submission page will be released the <bold>last week of each month</bold>!
+            </p>
+            <br>
+            <div class="main-content-btn">
+                <a data-modal-target="#modal" class="btn btn-dark btn-l btn-rounded">
+                    Sign Up  <i class="fas fa-chevron-right btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                Please enter your information:
+            </div>
+            <button data-close-modal class="close-modal">&times;</button>
+        </div>
+        <div class="modal-form">
+            <form action="submit" method="GET">
+                <div>
+                    <div class="left-top-form">
+                        <label for="fName">First Name </label>
+                        <br>
+                        <input id="fName" name="fName" type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="right-top-form">
+                        <label for="lName">Last Name</label>
+                        <br>
+                        <input id="lName" name="lName" type="text" placeholder="Enter your last name">
+                    </div>
+                    <div class="bottom-left-form">
+                        <label for="email">Email</label>
+                        <br>
+                        <input id="email" name="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <button class="btn-l btn-dark btn-rounded" type="submit">Submit <i class="fas fa-chevron-right btn-icon"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+
+</html>
