@@ -55,15 +55,15 @@ const submitModal = document.querySelector("submitModal")
 // const email = getElementById('email').value
 // var data = { 'fName' : fName, 'lName' : lName, 'email' : email}
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(googleScript, {
-        method: 'POST', 
-        body: new FormData(form), 
-        headers: {
-        'Content-Type': 'text/plain;charset=utf-8',
-        }
-    })
-        .then(response => alert('Thanks for your interest! Good luck on the Game jam!'))
-        .catch(error => console.error('Error!', error.message))
-    })
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(googleScript, {
+//         method: 'POST', 
+//         body: new FormData(form), 
+//         headers: {
+//         'Content-Type': 'text/plain;charset=utf-8',
+//         }
+//     })
+//         .then(response => alert('Thanks for your interest! Good luck on the Game jam!'))
+//         .catch(error => console.error('Error!', error.message))
+//     })
