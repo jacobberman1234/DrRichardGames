@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/GameJam/newstyle.css">
     <script src="https://kit.fontawesome.com/0a2e614e59.js" crossorigin="anonymous"></script>
     <script defer src="js/GameJam/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Inexperienced Developer's Monthly Game Jam - Registration</title>
 </head>
 <body>
@@ -82,29 +83,41 @@
             <button data-close-modal class="close-modal">&times;</button>
         </div>
         <div class="modal-form">
-            <form action="submit" method="GET">
+            <form action="submit" method="POST" name="google-sheets" id="form" onSubmit='CloseOnSubmit()'>
                 <div>
                     <div class="left-top-form">
                         <label for="fName">First Name </label>
                         <br>
-                        <input id="fName" name="fName" type="text" placeholder="Enter your first name">
+                        <input id="fName" name="fName" type="text" placeholder="Enter your first name" value="" required>
                     </div>
                     <div class="right-top-form">
                         <label for="lName">Last Name</label>
                         <br>
-                        <input id="lName" name="lName" type="text" placeholder="Enter your last name">
+                        <input id="lName" name="lName" type="text" placeholder="Enter your last name" value="" required>
                     </div>
                     <div class="bottom-left-form">
                         <label for="email">Email</label>
                         <br>
-                        <input id="email" name="email" type="email" placeholder="Enter your email">
+                        <input id="email" name="email" type="email" placeholder="Enter your email" value="" required>
                     </div>
                     <br>
-                    <button class="btn btn-dark btn-rounded" type="submit">Submit <i class="fas fa-chevron-right btn-icon"></i></button>
+                    <button class="btn btn-dark btn-rounded" type="submit" id="submit">Submit <i class="fas fa-chevron-right btn-icon"></i></button>
                 </div>
             </form>
         </div>
     </div>
+
+    <div class="modal" id="submitModal">
+        <div class="modal-header">
+            <div class="modal-title">
+                Please enter your information:
+            </div>
+            <button data-close-modal class="close-modal">&times;</button>
+        </div>
+
+        </div>
+    </div>
+
     <div id="overlay"></div>
 </body>
 </html>
