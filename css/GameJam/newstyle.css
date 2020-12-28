@@ -2,7 +2,9 @@
     --dark-background-color: #686E96;
     --dark-text-color: #151726;
     --light-text-color: #FFFEFC;
-    --light-background-color: #CACDE3;
+    --light-background-color: rgb(202, 205, 227);
+    --red-background-color: #cc4e4e;
+    --dark-red-background-color: #7b2020;
     --light-weight: 400;
     --medium-weight: 600;
     --bold-weight: 1000;
@@ -140,19 +142,26 @@ bold {
     color: var(--light-text-color);
 }
 
+.btn-red{
+    background-color: var(--dark-red-background-color);
+    color: var(--light-text-color);
+}
+
+
 /* Modal */
 .modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: solid var(--dark-background-color);
+    border: solid var(--dark-background-color) 10px;
     border-radius: 10px;
     z-index: 10;
-    background-color: var(--light-background-color);
+    background-color: var(--red-background-color);
     width: 900px;
     max-width: 80%;
     font-weight: var(--medium-weight);
+    color: var(--light-text-color);
 }
 
 .modal.active {
@@ -219,7 +228,7 @@ bold {
     height: 50%;
     padding-left: .25em;
     font-size:1em;
-    margin: 4px;
+    margin: 10px;
     padding-top: .25em;
 }
 
@@ -377,6 +386,60 @@ bold {
         min-width: 500px;
     }
 
+    .left-top-form {
+        display: inline-block;
+        left: 3%;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        font-size:1.5em;
+    }
+    
+    .left-top-form input[type=text] {
+        width: 75%;
+        height: 50%;
+        font-size:1em;
+        padding-left: .25em;
+        padding-top: .25em;
+        margin: .25em 0;
+    }
+    
+    .right-top-form {
+        display: inline-block;
+        left: 3%;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        font-size:1.5em;
+    }
+    
+    .right-top-form input[type=text] {
+        width: 75%;
+        height: 50%;
+        font-size:1em;
+        padding-left: .25em;
+        padding-top: .25em;
+        margin: .25em 0;
+    }
+    
+    .bottom-left-form {
+        display: inline-block;
+        left: 3%;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        font-size:1.5em;
+    }
+    
+    .bottom-left-form input[type=email] {
+        width: 75%;
+        height: 50%;
+        font-size:1em;
+        padding-left: .25em;
+        padding-top: .25em;
+        margin: .25em 0;
+    }
+}
 
 
 @media (max-width: 500px) {
